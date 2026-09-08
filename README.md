@@ -78,7 +78,7 @@ No se utilizan paquetes externos de terceros. La app funciona únicamente con el
 
 ```bash
 # 1. Clonar el repositorio
-git clone <url-del-repositorio>
+git clone github.com/slorduy/mi-perfil-dev
 cd mi_pefil_dev
 
 # 2. Instalar dependencias
