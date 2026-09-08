@@ -6,9 +6,9 @@ Aplicación Flutter de perfil profesional para desarrolladores. Funciona como un
 
 ## Capturas de pantalla
 
-| Perfil | Proyectos |
-|---|---|
-| Pantalla principal con foto, stats y bio | Lista de proyectos con tarjetas |
+| Perfil | Perfil destacado | Proyectos |
+|---|---|---|
+| ![Perfil](assets/screenshots/screenshot_1.png) | ![Perfil destacado](assets/screenshots/screenshot_2.png) | ![Proyectos](assets/screenshots/screenshot_3.png) |
 
 ---
 
@@ -109,3 +109,9 @@ models/ → screens/ → widgets/
 ## Licencia
 
 Este proyecto es privado y fue desarrollado como reto de práctica Flutter.
+
+---
+
+## Repositorio
+
+[github.com/slorduy/mi-perfil-dev](https://github.com/slorduy/mi-perfil-dev)

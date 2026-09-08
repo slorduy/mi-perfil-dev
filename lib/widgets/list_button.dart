@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mi_pefil_dev/screens/project_list_screen.dart';
+
+/// Botón de navegación con apariencia de fila de lista.
 
 class ListButton extends StatelessWidget {
-  const new({super.key});
+  final String title;
+  final VoidCallback onPressed;
+  const ListButton({super.key, required this.title, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -10,19 +13,13 @@ class ListButton extends StatelessWidget {
       elevation: 1,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: ListTile(
-        // Icono izquierdo
-        title: const Text('Ver Proyectos'),
+        title: Text(title),
         trailing: const Icon(
-          Icons.arrow_forward_ios, // Flecha a la derecha
+          Icons.arrow_forward_ios,
           size: 16,
           color: Colors.grey,
         ),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ProjectListScreen()),
-          );
-        },
+        onTap: onPressed,
       ),
     );
   }

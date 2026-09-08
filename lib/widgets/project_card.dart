@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Tarjeta que presenta la información detallada de un proyecto del portafolio.
+///
+/// Muestra nombre, descripción, rol ejercido y duración de participación.
 class ProjectCard extends StatelessWidget {
   final String name;
   final String description;
@@ -21,9 +24,9 @@ class ProjectCard extends StatelessWidget {
       child: ConstrainedBox(
         constraints: BoxConstraints(minHeight: 90, minWidth: 90),
         child: Card(
-          elevation: 4, // Controla la sombra de la tarjeta
+          elevation: 4,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15), // Esquinas redondeadas
+            borderRadius: BorderRadius.circular(15),
           ),
           child: Padding(
             padding: EdgeInsets.all(16.0),
@@ -35,11 +38,11 @@ class ProjectCard extends StatelessWidget {
                   name,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(description),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text('Rol: $rol'),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text('Duracion: $duration'),
               ],
             ),

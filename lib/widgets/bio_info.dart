@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 
+/// Sección de biografía del perfil.
+///
+/// Muestra un encabezado fijo "Bio" seguido del texto descriptivo recibido
+/// como parámetro, permitiendo reutilizar el widget con distintos perfiles.
 class BioInfo extends StatelessWidget {
-  const new({super.key});
+  final String bioDescription;
+  const BioInfo({super.key, required this.bioDescription});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Bio', style: TextStyle(fontWeight: FontWeight.bold)),
-        SizedBox(height: 10),
-        Text(
-          'Desarrollador de Software apasionado por construir aplicaciones móviles funcionales y escalables. Enfocado en el desarrollo con Flutter y Dart, transformando ideas en experiencias de usuario intuitivas, limpias y atractivas. Siempre aprendiendo nuevas tecnologías y mejores prácticas de código.',
-        ),
+        const Text('Bio', style: TextStyle(fontWeight: FontWeight.bold)),
+        const SizedBox(height: 10),
+        Text(bioDescription),
       ],
     );
   }
