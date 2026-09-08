@@ -15,6 +15,7 @@ Aplicación Flutter de perfil profesional para desarrolladores. Funciona como un
 ## Funcionalidades
 
 - **Foto de perfil interactiva**: al tocarla se abre un visor a pantalla completa con soporte de zoom (hasta 4×) y gestos de paneo.
+- **Marcar como destacado**: botón de estrella que alterna el estado de favorito del perfil
 - **Estadísticas de carrera**: tarjetas compactas con número de proyectos, años de experiencia y repositorios.
 - **Sección bio**: descripción breve del perfil profesional.
 - **Chips de tecnologías**: badges visuales con el stack de habilidades (Flutter, Dart, Firebase, Git, REST API).
@@ -27,6 +28,8 @@ Aplicación Flutter de perfil profesional para desarrolladores. Funciona como un
 ```
 lib/
 ├── main.dart                      # Punto de entrada y configuración del tema
+├── data/
+│   └── project_data.dart          # Datos estáticos de los proyectos del portafolio
 ├── models/
 │   └── project_model.dart         # Modelo de datos para proyectos
 ├── screens/
@@ -34,13 +37,18 @@ lib/
 │   └── project_list_screen.dart   # Pantalla de lista de proyectos
 └── widgets/
     ├── bio_info.dart              # Widget de sección de biografía
+    ├── icon_button.dart           # Botón de icono con tooltip (favorito)
     ├── info_card.dart             # Tarjeta de estadística (número + etiqueta)
     ├── list_button.dart           # Botón de navegación a la lista de proyectos
     └── project_card.dart          # Tarjeta individual de proyecto
 
 assets/
-└── images/
-    └── profile.jpeg               # Foto de perfil
+├── images/
+│   └── profile.jpeg               # Foto de perfil
+└── screenshots/
+    ├── screenshot_1.png           # Pantalla de perfil
+    ├── screenshot_2.png           # Pantalla de perfil destacado
+    └── screenshot_3.png           # Pantalla de lista de proyectos
 ```
 
 ---
